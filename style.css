@@ -5,6 +5,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
   gap: 3px;
   background-color: #fff4e6;
   border: 2px solid #f76707;
@@ -21,17 +22,10 @@
 
 .box1 {
   grid-column: 1 / 4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-row: 1 / 3;
 }
 
 .box2 {
-  grid-row: 2/ 4;
-}
-
-.nested {
-  border: 2px solid #ffec99;
-  border-radius: 5px;
-  background-color: #fff9db;
-  padding: 1em;
+  grid-column: 1;
+  grid-row: 2 / 4;
 }
